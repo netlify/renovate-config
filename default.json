@@ -1,14 +1,14 @@
 {
   "extends": [
-    "config:base"
+    "config:base",
+    "schedule:weekly"
   ],
   "rangeStrategy": "update-lockfile",
   "automerge": true,
   "major": {
-    "automerge": false,
+    "automerge": false
   },
   "lockFileMaintenance": {
-    "enabled": true,
-    "extends": "schedule:weekly"
+    "enabled": true
   }
 }

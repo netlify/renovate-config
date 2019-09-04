@@ -1,10 +1,9 @@
 {
   "extends": [
-    "github>netlify/renovate-config:default"
+    "github>netlify/renovate-config"
   ],
-  "packageRules": [
-    {
-      "excludePackagePatterns": ["^netlify-cms"],
-    }
-  ]
+  "packageRules": [{
+    "packagePatterns": ["^netlify-cms"],
+    "schedule": null
+  }]
 }
