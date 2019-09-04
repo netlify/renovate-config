@@ -1,16 +1,7 @@
 {
   "extends": [
-    "config:base"
+    "github>netlify/renovate-config:default"
   ],
-  "rangeStrategy": "update-lockfile",
-  "automerge": true,
-  "major": {
-    "automerge": false,
-  },
-  "lockFileMaintenance": {
-    "enabled": true,
-    "extends": "schedule:weekly"
-  },
   "packageRules": [
     {
       "excludePackagePatterns": ["^netlify-cms"],
