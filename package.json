@@ -4,46 +4,6 @@
   "scripts": {
     "test": "renovate-config-validator"
   },
-  "renovate-config": {
-    "default": {
-      "extends": [
-        "config:base",
-        "schedule:weekly"
-      ],
-      "rangeStrategy": "update-lockfile",
-      "automerge": true,
-      "major": {
-        "automerge": false
-      },
-      "lockFileMaintenance": {
-        "enabled": true
-      }
-    },
-    "netlify-cms-starter": {
-      "extends": [
-        "github>netlify/renovate-config"
-      ],
-      "packageRules": [{
-        "packagePatterns": ["^netlify-cms"],
-        "schedule": null
-      }]
-    },
-    "netlify-cms-only": {
-      "extends": [
-        "github>netlify/renovate-config"
-      ],
-      "packageRules": [
-        {
-          "packagePatterns": ["*"],
-          "enabled": false
-        },
-        {
-          "packagePatterns": ["^netlify-cms"],
-          "schedule": null
-        }
-      ]
-    }
-  },
   "dependencies": {
     "renovate": "^19.171.0"
   },
