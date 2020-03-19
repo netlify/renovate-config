@@ -9,7 +9,8 @@
     },
     {
       "packagePatterns": ["^netlify-cms"],
-      "schedule": null
+      "schedule": null,
+      "enabled": true
     }
   ]
 }
