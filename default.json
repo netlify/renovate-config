@@ -1,8 +1,8 @@
 {
   "force": {
     "constraints": {
-      "node": "< 15.0.0",
-    },
+      "node": "< 15.0.0"
+    }
   },
   "extends": [
     "config:base",
