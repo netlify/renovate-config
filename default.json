@@ -20,6 +20,7 @@
     {
       "packagePatterns": ["^@netlify", "^netlify"],
       "groupName": "netlify packages",
+      "rangeStrategy": "bump",
       "schedule": null
     }
   ]
