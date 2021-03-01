@@ -4,10 +4,7 @@
       "node": "< 15.0.0"
     }
   },
-  "extends": [
-    "config:base",
-    "schedule:weekly"
-  ],
+  "extends": ["config:base", "schedule:weekly"],
   "rangeStrategy": "update-lockfile",
   "automerge": true,
   "major": {
@@ -22,6 +19,10 @@
       "groupName": "netlify packages",
       "rangeStrategy": "bump",
       "schedule": null
+    },
+    {
+      "matchPackageNames": ["husky"],
+      "allowedVersions": "<5"
     }
   ]
 }
