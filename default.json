@@ -15,10 +15,13 @@
   },
   "packageRules": [
     {
-      "packagePatterns": ["^@netlify", "^netlify"],
-      "groupName": "netlify packages",
+      "matchPackagePatterns": ["^@netlify", "^netlify"],
       "rangeStrategy": "bump",
       "schedule": null
+    },
+    {
+      "matchSourceUrlPrefixes": ["https://github.com/netlify/build"],
+      "groupName": "Netlify Build packages"
     },
     {
       "matchPackageNames": ["husky"],
