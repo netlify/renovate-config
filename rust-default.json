@@ -1,0 +1,58 @@
+{
+  "description": "Shared Renovate configuration for Netlify Rust repositories",
+  "dependencyDashboard": true,
+  "prCreation": "not-pending",
+  "timezone": "Europe/Paris",
+  "schedule": "after 4am and before 9am every weekday",
+  "lockfileMaintenance": true,
+  "packageRules": [
+    {
+      "packageNames": ["capnp", "capnpc"],
+      "groupName": "capnp packages"
+    },
+    {
+      "packagePatterns": ["^futures[-_]?"],
+      "groupName": "futures packages"
+    },
+    {
+      "packagePatterns": ["^opentelemetry[-_]?", "^tracing-opentelemetry$"],
+      "groupName": "opentelemetry packages"
+    },
+    {
+      "packagePatterns": ["^prost[-_]?"],
+      "groupName": "prost packages"
+    },
+    {
+      "packagePatterns": ["^rusoto[-_]?"],
+      "groupName": "rusoto packages"
+    },
+    {
+      "packagePatterns": ["^serde[-_]?"],
+      "groupName": "serde packages"
+    },
+    {
+      "packagePatterns": ["^tokio[-_]?"],
+      "groupName": "tokio packages"
+    },
+    {
+      "packagePatterns": ["^tracing[-_]?"],
+      "excludePackageNames": ["tracing-opentelemetry"],
+      "groupName": "tracing packages"
+    },
+    {
+      "packagePatterns": ["^tonic[-_]?"],
+      "groupName": "tonic packages"
+    }
+  ],
+  "regexManagers": [
+    {
+      "fileMatch": ["^rust-toolchain(\\.ya?ml)?$"],
+      "matchStrings": [
+        "channel\\s*=\\s*\"(?<currentValue>\\d+\\.\\d+\\.\\d+)\""
+      ],
+      "depNameTemplate": "rust",
+      "lookupNameTemplate": "rust-lang/rust",
+      "datasourceTemplate": "github-releases"
+    }
+  ]
+}
