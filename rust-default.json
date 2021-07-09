@@ -5,6 +5,7 @@
   "timezone": "Europe/Paris",
   "schedule": "after 4am and before 9am every weekday",
   "lockfileMaintenance": true,
+  "semanticCommitType": "fix",
   "packageRules": [
     {
       "packageNames": ["capnp", "capnpc"],
