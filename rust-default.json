@@ -20,8 +20,8 @@
       "groupName": "opentelemetry packages"
     },
     {
-      "packagePatterns": ["^prost[-_]?"],
-      "groupName": "prost packages"
+      "packagePatterns": ["^prost[-_]?", "^tonic[-_]?"],
+      "groupName": "gRPC-related packages"
     },
     {
       "packagePatterns": ["^rusoto[-_]?"],
@@ -39,10 +39,6 @@
       "packagePatterns": ["^tracing[-_]?"],
       "excludePackageNames": ["tracing-opentelemetry"],
       "groupName": "tracing packages"
-    },
-    {
-      "packagePatterns": ["^tonic[-_]?"],
-      "groupName": "tonic packages"
     }
   ],
   "regexManagers": [
