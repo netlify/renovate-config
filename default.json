@@ -15,7 +15,7 @@
   },
   "packageRules": [
     {
-      "matchPackagePatterns": ["^@netlify", "^netlify"],
+      "matchPackagePatterns": ["^@netlify", "^netlify", "^github.com/netlify"],
       "rangeStrategy": "bump",
       "schedule": null
     },
