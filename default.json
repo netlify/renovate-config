@@ -28,6 +28,10 @@
       "allowedVersions": "<5"
     },
     {
+      "matchPackageNames": ["filter-obj"],
+      "allowedVersions": "<3"
+    },
+    {
       "matchPackageNames": ["husky"],
       "allowedVersions": "<5"
     }
