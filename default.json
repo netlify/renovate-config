@@ -34,6 +34,22 @@
     {
       "matchPackageNames": ["husky"],
       "allowedVersions": "<5"
+    },
+    {
+      "matchPackageNames": ["ora"],
+      "allowedVersions": "<6"
+    },
+    {
+      "matchPackageNames": ["locate-path"],
+      "allowedVersions": "<7"
+    },
+    {
+      "matchPackageNames": ["find-up"],
+      "allowedVersions": "<6"
+    },
+    {
+      "matchPackageNames": ["env-paths"],
+      "allowedVersions": "<3"
     }
   ]
 }
