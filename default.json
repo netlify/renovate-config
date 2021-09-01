@@ -50,6 +50,14 @@
     {
       "matchPackageNames": ["env-paths"],
       "allowedVersions": "<3"
+    },
+    {
+      "matchPackageNames": ["path-exists"],
+      "allowedVersions": "<5"
+    },
+    {
+      "matchPackageNames": ["junk"],
+      "allowedVersions": "<4"
     }
   ]
 }
