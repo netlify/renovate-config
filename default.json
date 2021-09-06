@@ -44,6 +44,10 @@
       "allowedVersions": "<7"
     },
     {
+      "matchPackageNames": ["node-fetch"],
+      "allowedVersions": "<3"
+    },
+    {
       "matchPackageNames": ["find-up"],
       "allowedVersions": "<6"
     },
