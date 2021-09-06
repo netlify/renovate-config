@@ -36,6 +36,10 @@
       "allowedVersions": "<5"
     },
     {
+      "matchPackageNames": ["is-docker"],
+      "allowedVersions": "<3"
+    },
+    {
       "matchPackageNames": ["ora"],
       "allowedVersions": "<6"
     },
