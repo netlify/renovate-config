@@ -64,6 +64,10 @@
       "allowedVersions": "<5"
     },
     {
+      "matchPackageNames": ["p-locate"],
+      "allowedVersions": "<6"
+    },
+    {
       "matchPackageNames": ["junk"],
       "allowedVersions": "<4"
     }
