@@ -73,7 +73,7 @@
     },
     {
       "matchPackageNames": ["pkg-dir"],
-      "allowedVersions": "<6",
+      "allowedVersions": "<6"
     }
   ]
 }
