@@ -74,6 +74,6 @@
     {
       "matchPackageNames": ["pkg-dir"],
       "allowedVersions": "<6",
-    },
+    }
   ]
 }
