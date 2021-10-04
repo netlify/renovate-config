@@ -32,6 +32,10 @@
       "allowedVersions": "<3"
     },
     {
+      "matchPackageNames": ["get-port"],
+      "allowedVersions": "<6"
+    },
+    {
       "matchPackageNames": ["husky"],
       "allowedVersions": "<5"
     },
