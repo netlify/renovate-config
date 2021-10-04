@@ -70,6 +70,10 @@
     {
       "matchPackageNames": ["junk"],
       "allowedVersions": "<4"
-    }
+    },
+    {
+      "matchPackageNames": ["pkg-dir"],
+      "allowedVersions": "<6",
+    },
   ]
 }
