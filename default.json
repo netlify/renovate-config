@@ -24,6 +24,10 @@
       "groupName": "Netlify Build packages"
     },
     {
+      "matchPackageNames": ["@npmcli/map-workspaces"],
+      "allowedVersions": "<2"
+    },
+    {
       "matchPackageNames": ["boxen"],
       "allowedVersions": "<6"
     },
