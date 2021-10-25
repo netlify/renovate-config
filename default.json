@@ -56,6 +56,10 @@
       "allowedVersions": "<7"
     },
     {
+      "matchPackageNames": ["map-obj"],
+      "allowedVersions": "<5"
+    },
+    {
       "matchPackageNames": ["node-fetch"],
       "allowedVersions": "<3"
     },
