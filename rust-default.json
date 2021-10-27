@@ -39,6 +39,10 @@
       "packagePatterns": ["^tracing[-_]?"],
       "excludePackageNames": ["tracing-opentelemetry"],
       "groupName": "tracing packages"
+    },
+    {
+      "packagePatterns": ["hyper-rustls", "rustls", "rustls-native-certs", "tokio-rustls"],
+      "groupName": "rustls packages"
     }
   ],
   "regexManagers": [
