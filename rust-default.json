@@ -41,7 +41,7 @@
       "groupName": "tracing packages"
     },
     {
-      "packagePatterns": ["hyper-rustls", "rustls", "rustls-native-certs", "tokio-rustls"],
+      "matchPackageNames": ["hyper-rustls", "rustls", "rustls-native-certs", "tokio-rustls"],
       "groupName": "rustls packages"
     }
   ],
