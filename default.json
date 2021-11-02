@@ -81,6 +81,10 @@
       "allowedVersions": "<5"
     },
     {
+      "matchPackageNames": ["pino"],
+      "allowedVersions": "<7"
+    },
+    {
       "matchPackageNames": ["p-locate"],
       "allowedVersions": "<6"
     },
