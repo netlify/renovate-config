@@ -22,7 +22,8 @@
     },
     {
       "matchSourceUrlPrefixes": ["https://github.com/netlify/build"],
-      "groupName": "Netlify Build packages"
+      "matchPackageNames": ["@netlify/zip-it-and-ship-it"],
+      "groupName": "Netlify packages"
     },
     {
       "matchPackageNames": ["@npmcli/map-workspaces"],
