@@ -86,6 +86,10 @@
       "allowedVersions": "<7"
     },
     {
+      "matchPackageNames": ["process-exists"],
+      "allowedVersions": "<5"
+    },
+    {
       "matchPackageNames": ["p-event"],
       "allowedVersions": "<5"
     },
