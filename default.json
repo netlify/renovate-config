@@ -104,6 +104,10 @@
     {
       "matchPackageNames": ["pkg-dir"],
       "allowedVersions": "<6"
+    },
+    {
+      "matchPackageNames": ["ps-list"],
+      "allowedVersions": "<8"
     }
   ]
 }
