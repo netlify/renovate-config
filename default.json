@@ -16,96 +16,119 @@
   "rebaseWhen": "conflicted",
   "packageRules": [
     {
+      "matchManagers": ["npm"],
       "matchPackagePatterns": ["^@netlify", "^netlify", "^github.com/netlify"],
       "rangeStrategy": "bump",
       "schedule": null
     },
     {
+      "matchManagers": ["npm"],
       "matchSourceUrlPrefixes": ["https://github.com/netlify/build"],
       "matchPackageNames": ["@netlify/zip-it-and-ship-it"],
       "groupName": "Netlify packages"
     },
     {
+      "matchManagers": ["npm"],
       "matchPackageNames": ["@npmcli/map-workspaces"],
       "allowedVersions": "<2"
     },
     {
+      "matchManagers": ["npm"],
       "matchPackageNames": ["boxen"],
       "allowedVersions": "<6"
     },
     {
+      "matchManagers": ["npm"],
       "matchPackageNames": ["escape-string-regexp"],
       "allowedVersions": "<5"
     },
     {
+      "matchManagers": ["npm"],
       "matchPackageNames": ["filter-obj"],
       "allowedVersions": "<3"
     },
     {
+      "matchManagers": ["npm"],
       "matchPackageNames": ["get-port"],
       "allowedVersions": "<6"
     },
     {
+      "matchManagers": ["npm"],
       "matchPackageNames": ["husky"],
       "allowedVersions": "<5"
     },
     {
+      "matchManagers": ["npm"],
       "matchPackageNames": ["is-docker"],
       "allowedVersions": "<3"
     },
     {
+      "matchManagers": ["npm"],
       "matchPackageNames": ["ora"],
       "allowedVersions": "<6"
     },
     {
+      "matchManagers": ["npm"],
       "matchPackageNames": ["locate-path"],
       "allowedVersions": "<7"
     },
     {
+      "matchManagers": ["npm"],
       "matchPackageNames": ["map-obj"],
       "allowedVersions": "<5"
     },
     {
+      "matchManagers": ["npm"],
       "matchPackageNames": ["node-fetch"],
       "allowedVersions": "<3"
     },
     {
+      "matchManagers": ["npm"],
       "matchPackageNames": ["find-up"],
       "allowedVersions": "<6"
     },
     {
+      "matchManagers": ["npm"],
       "matchPackageNames": ["env-paths"],
       "allowedVersions": "<3"
     },
     {
+      "matchManagers": ["npm"],
       "matchPackageNames": ["path-exists"],
       "allowedVersions": "<5"
     },
     {
+      "matchManagers": ["npm"],
       "matchPackageNames": ["pino"],
       "allowedVersions": "<7"
     },
     {
+      "matchManagers": ["npm"],
       "matchPackageNames": ["process-exists"],
       "allowedVersions": "<5"
     },
     {
+      "matchManagers": ["npm"],
       "matchPackageNames": ["p-event"],
       "allowedVersions": "<5"
     },
     {
+      "matchManagers": ["npm"],
       "matchPackageNames": ["p-locate"],
       "allowedVersions": "<6"
     },
     {
+      "matchManagers": ["npm"],
       "matchPackageNames": ["junk"],
       "allowedVersions": "<4"
     },
     {
+      "matchManagers": ["npm"],
       "matchPackageNames": ["pkg-dir"],
       "allowedVersions": "<6"
     },
     {
+      "matchManagers": ["npm"],
       "matchPackageNames": ["ps-list"],
       "allowedVersions": "<8"
     }
