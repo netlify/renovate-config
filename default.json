@@ -38,6 +38,10 @@
       "allowedVersions": "<5"
     },
     {
+      "matchPackageNames": ["execa"],
+      "allowedVersions": "<6"
+    },
+    {
       "matchPackageNames": ["filter-obj"],
       "allowedVersions": "<3"
     },
