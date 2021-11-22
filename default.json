@@ -108,6 +108,10 @@
     {
       "matchPackageNames": ["ps-list"],
       "allowedVersions": "<8"
+    },
+    {
+      "matchPackageNames": ["sort-on"],
+      "allowedVersions": "<5"
     }
   ]
 }
