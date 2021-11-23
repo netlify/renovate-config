@@ -190,6 +190,10 @@
       "allowedVersions": "<3"
     },
     {
+      "matchPackageNames": ["read-pkg"],
+      "allowedVersions": "<6"
+    },
+    {
       "matchPackageNames": ["read-pkg-up"],
       "allowedVersions": "<8"
     },
