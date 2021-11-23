@@ -30,8 +30,24 @@
       "allowedVersions": "<2"
     },
     {
+      "matchPackageNames": ["@sindresorhus/slugify"],
+      "allowedVersions": "<2"
+    },
+    {
+      "matchPackageNames": ["ansi-escapes"],
+      "allowedVersions": "<5"
+    },
+    {
       "matchPackageNames": ["boxen"],
       "allowedVersions": "<6"
+    },
+    {
+      "matchPackageNames": ["clean-stack"],
+      "allowedVersions": "<4"
+    },
+    {
+      "matchPackageNames": ["env-paths"],
+      "allowedVersions": "<3"
     },
     {
       "matchPackageNames": ["escape-string-regexp"],
@@ -46,11 +62,43 @@
       "allowedVersions": "<3"
     },
     {
+      "matchPackageNames": ["find-up"],
+      "allowedVersions": "<6"
+    },
+    {
+      "matchPackageNames": ["figures"],
+      "allowedVersions": "<4"
+    },
+    {
+      "matchPackageNames": ["get-bin-path"],
+      "allowedVersions": "<6"
+    },
+    {
+      "matchPackageNames": ["get-node"],
+      "allowedVersions": "<12"
+    },
+    {
       "matchPackageNames": ["get-port"],
       "allowedVersions": "<6"
     },
     {
+      "matchPackageNames": ["globby"],
+      "allowedVersions": "<12"
+    },
+    {
+      "matchPackageNames": ["got"],
+      "allowedVersions": "<11"
+    },
+    {
+      "matchPackageNames": ["has-ansi"],
+      "allowedVersions": "<5"
+    },
+    {
       "matchPackageNames": ["husky"],
+      "allowedVersions": "<5"
+    },
+    {
+      "matchPackageNames": ["indent-string"],
       "allowedVersions": "<5"
     },
     {
@@ -58,11 +106,23 @@
       "allowedVersions": "<3"
     },
     {
-      "matchPackageNames": ["ora"],
-      "allowedVersions": "<6"
+      "matchPackageNames": ["is-plain-obj"],
+      "allowedVersions": "<4"
+    },
+    {
+      "matchPackageNames": ["junk"],
+      "allowedVersions": "<4"
+    },
+    {
+      "matchPackageNames": ["keep-func-props"],
+      "allowedVersions": "<4"
     },
     {
       "matchPackageNames": ["locate-path"],
+      "allowedVersions": "<7"
+    },
+    {
+      "matchPackageNames": ["log-process-errors"],
       "allowedVersions": "<7"
     },
     {
@@ -70,19 +130,31 @@
       "allowedVersions": "<5"
     },
     {
+      "matchPackageNames": ["move-file"],
+      "allowedVersions": "<3"
+    },
+    {
       "matchPackageNames": ["node-fetch"],
       "allowedVersions": "<3"
     },
     {
-      "matchPackageNames": ["find-up"],
+      "matchPackageNames": ["ora"],
       "allowedVersions": "<6"
     },
     {
-      "matchPackageNames": ["env-paths"],
-      "allowedVersions": "<3"
+      "matchPackageNames": ["os-name"],
+      "allowedVersions": "<5"
     },
     {
       "matchPackageNames": ["path-exists"],
+      "allowedVersions": "<5"
+    },
+    {
+      "matchPackageNames": ["path-key"],
+      "allowedVersions": "<4"
+    },
+    {
+      "matchPackageNames": ["path-type"],
       "allowedVersions": "<5"
     },
     {
@@ -90,32 +162,56 @@
       "allowedVersions": "<7"
     },
     {
-      "matchPackageNames": ["process-exists"],
-      "allowedVersions": "<5"
-    },
-    {
-      "matchPackageNames": ["p-event"],
-      "allowedVersions": "<5"
-    },
-    {
-      "matchPackageNames": ["p-locate"],
-      "allowedVersions": "<6"
-    },
-    {
-      "matchPackageNames": ["junk"],
-      "allowedVersions": "<4"
-    },
-    {
       "matchPackageNames": ["pkg-dir"],
       "allowedVersions": "<6"
+    },
+    {
+      "matchPackageNames": ["process-exists"],
+      "allowedVersions": "<5"
     },
     {
       "matchPackageNames": ["ps-list"],
       "allowedVersions": "<8"
     },
     {
+      "matchPackageNames": ["p-event"],
+      "allowedVersions": "<5"
+    },
+    {
+      "matchPackageNames": ["p-filter"],
+      "allowedVersions": "<3"
+    },
+    {
+      "matchPackageNames": ["p-locate"],
+      "allowedVersions": "<6"
+    },
+    {
+      "matchPackageNames": ["p-reduce"],
+      "allowedVersions": "<3"
+    },
+    {
+      "matchPackageNames": ["read-pkg-up"],
+      "allowedVersions": "<8"
+    },
+    {
       "matchPackageNames": ["sort-on"],
       "allowedVersions": "<5"
-    }
+    },
+    {
+      "matchPackageNames": ["string-width"],
+      "allowedVersions": "<5"
+    },
+    {
+      "matchPackageNames": ["strip-ansi"],
+      "allowedVersions": "<7"
+    },
+    {
+      "matchPackageNames": ["supports-color"],
+      "allowedVersions": "<9"
+    },
+    {
+      "matchPackageNames": ["yargs"],
+      "allowedVersions": "<17"
+    },
   ]
 }
