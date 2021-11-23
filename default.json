@@ -210,6 +210,10 @@
       "allowedVersions": "<9"
     },
     {
+      "matchPackageNames": ["test-each"],
+      "allowedVersions": "<3"
+    },
+    {
       "matchPackageNames": ["yargs"],
       "allowedVersions": "<17"
     }
