@@ -186,8 +186,16 @@
       "allowedVersions": "<6"
     },
     {
+      "matchPackageNames": ["p-map"],
+      "allowedVersions": "<5"
+    },
+    {
       "matchPackageNames": ["p-reduce"],
       "allowedVersions": "<3"
+    },
+    {
+      "matchPackageNames": ["p-wait-for"],
+      "allowedVersions": "<4"
     },
     {
       "matchPackageNames": ["read-pkg"],
@@ -212,6 +220,10 @@
     {
       "matchPackageNames": ["supports-color"],
       "allowedVersions": "<9"
+    },
+    {
+      "matchPackageNames": ["tempy"],
+      "allowedVersions": "<2"
     },
     {
       "matchPackageNames": ["test-each"],
