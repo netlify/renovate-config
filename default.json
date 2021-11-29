@@ -26,10 +26,6 @@
       "groupName": "Netlify packages"
     },
     {
-      "matchPackageNames": ["@npmcli/map-workspaces"],
-      "allowedVersions": "<2"
-    },
-    {
       "matchPackageNames": ["@sindresorhus/slugify"],
       "allowedVersions": "<2"
     },
@@ -162,10 +158,6 @@
       "allowedVersions": "<5"
     },
     {
-      "matchPackageNames": ["pino"],
-      "allowedVersions": "<7"
-    },
-    {
       "matchPackageNames": ["pkg-dir"],
       "allowedVersions": "<6"
     },
@@ -232,10 +224,6 @@
     {
       "matchPackageNames": ["test-each"],
       "allowedVersions": "<3"
-    },
-    {
-      "matchPackageNames": ["yargs"],
-      "allowedVersions": "<17"
     }
   ]
 }
