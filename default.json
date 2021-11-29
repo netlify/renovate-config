@@ -42,6 +42,10 @@
       "allowedVersions": "<6"
     },
     {
+      "matchPackageNames": ["chalk"],
+      "allowedVersions": "<5"
+    },
+    {
       "matchPackageNames": ["clean-stack"],
       "allowedVersions": "<4"
     },
