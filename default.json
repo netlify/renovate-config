@@ -16,212 +16,264 @@
   "rebaseWhen": "conflicted",
   "packageRules": [
     {
+      "matchManagers": ["npm"],
       "matchPackagePatterns": ["^@netlify", "^netlify", "^github.com/netlify"],
       "rangeStrategy": "bump",
       "schedule": null
     },
     {
+      "matchManagers": ["npm"],
       "matchSourceUrlPrefixes": ["https://github.com/netlify/build"],
       "matchPackageNames": ["@netlify/zip-it-and-ship-it"],
       "groupName": "Netlify packages"
     },
     {
+      "matchManagers": ["npm"],
       "matchPackageNames": ["@sindresorhus/slugify"],
       "allowedVersions": "<2"
     },
     {
+      "matchManagers": ["npm"],
       "matchPackageNames": ["ansi-escapes"],
       "allowedVersions": "<5"
     },
     {
+      "matchManagers": ["npm"],
       "matchPackageNames": ["boxen"],
       "allowedVersions": "<6"
     },
     {
+      "matchManagers": ["npm"],
       "matchPackageNames": ["chalk"],
       "allowedVersions": "<5"
     },
     {
+      "matchManagers": ["npm"],
       "matchPackageNames": ["clean-stack"],
       "allowedVersions": "<4"
     },
     {
+      "matchManagers": ["npm"],
       "matchPackageNames": ["env-paths"],
       "allowedVersions": "<3"
     },
     {
+      "matchManagers": ["npm"],
       "matchPackageNames": ["escape-string-regexp"],
       "allowedVersions": "<5"
     },
     {
+      "matchManagers": ["npm"],
       "matchPackageNames": ["execa"],
       "allowedVersions": "<6"
     },
     {
+      "matchManagers": ["npm"],
       "matchPackageNames": ["filter-obj"],
       "allowedVersions": "<3"
     },
     {
+      "matchManagers": ["npm"],
       "matchPackageNames": ["find-up"],
       "allowedVersions": "<6"
     },
     {
+      "matchManagers": ["npm"],
       "matchPackageNames": ["figures"],
       "allowedVersions": "<4"
     },
     {
+      "matchManagers": ["npm"],
       "matchPackageNames": ["get-bin-path"],
       "allowedVersions": "<6"
     },
     {
+      "matchManagers": ["npm"],
       "matchPackageNames": ["get-node"],
       "allowedVersions": "<12"
     },
     {
+      "matchManagers": ["npm"],
       "matchPackageNames": ["get-port"],
       "allowedVersions": "<6"
     },
     {
+      "matchManagers": ["npm"],
       "matchPackageNames": ["globby"],
       "allowedVersions": "<12"
     },
     {
+      "matchManagers": ["npm"],
       "matchPackageNames": ["got"],
       "allowedVersions": "<11"
     },
     {
+      "matchManagers": ["npm"],
       "matchPackageNames": ["has-ansi"],
       "allowedVersions": "<5"
     },
     {
+      "matchManagers": ["npm"],
       "matchPackageNames": ["husky"],
       "allowedVersions": "<5"
     },
     {
+      "matchManagers": ["npm"],
       "matchPackageNames": ["indent-string"],
       "allowedVersions": "<5"
     },
     {
+      "matchManagers": ["npm"],
       "matchPackageNames": ["is-docker"],
       "allowedVersions": "<3"
     },
     {
+      "matchManagers": ["npm"],
       "matchPackageNames": ["is-plain-obj"],
       "allowedVersions": "<4"
     },
     {
+      "matchManagers": ["npm"],
       "matchPackageNames": ["junk"],
       "allowedVersions": "<4"
     },
     {
+      "matchManagers": ["npm"],
       "matchPackageNames": ["keep-func-props"],
       "allowedVersions": "<4"
     },
     {
+      "matchManagers": ["npm"],
       "matchPackageNames": ["locate-path"],
       "allowedVersions": "<7"
     },
     {
+      "matchManagers": ["npm"],
       "matchPackageNames": ["log-process-errors"],
       "allowedVersions": "<7"
     },
     {
+      "matchManagers": ["npm"],
       "matchPackageNames": ["map-obj"],
       "allowedVersions": "<5"
     },
     {
+      "matchManagers": ["npm"],
       "matchPackageNames": ["move-file"],
       "allowedVersions": "<3"
     },
     {
+      "matchManagers": ["npm"],
       "matchPackageNames": ["node-fetch"],
       "allowedVersions": "<3"
     },
     {
+      "matchManagers": ["npm"],
       "matchPackageNames": ["ora"],
       "allowedVersions": "<6"
     },
     {
+      "matchManagers": ["npm"],
       "matchPackageNames": ["os-name"],
       "allowedVersions": "<5"
     },
     {
+      "matchManagers": ["npm"],
       "matchPackageNames": ["path-exists"],
       "allowedVersions": "<5"
     },
     {
+      "matchManagers": ["npm"],
       "matchPackageNames": ["path-key"],
       "allowedVersions": "<4"
     },
     {
+      "matchManagers": ["npm"],
       "matchPackageNames": ["path-type"],
       "allowedVersions": "<5"
     },
     {
+      "matchManagers": ["npm"],
       "matchPackageNames": ["pkg-dir"],
       "allowedVersions": "<6"
     },
     {
+      "matchManagers": ["npm"],
       "matchPackageNames": ["process-exists"],
       "allowedVersions": "<5"
     },
     {
+      "matchManagers": ["npm"],
       "matchPackageNames": ["ps-list"],
       "allowedVersions": "<8"
     },
     {
+      "matchManagers": ["npm"],
       "matchPackageNames": ["p-event"],
       "allowedVersions": "<5"
     },
     {
+      "matchManagers": ["npm"],
       "matchPackageNames": ["p-filter"],
       "allowedVersions": "<3"
     },
     {
+      "matchManagers": ["npm"],
       "matchPackageNames": ["p-locate"],
       "allowedVersions": "<6"
     },
     {
+      "matchManagers": ["npm"],
       "matchPackageNames": ["p-map"],
       "allowedVersions": "<5"
     },
     {
+      "matchManagers": ["npm"],
       "matchPackageNames": ["p-reduce"],
       "allowedVersions": "<3"
     },
     {
+      "matchManagers": ["npm"],
       "matchPackageNames": ["p-wait-for"],
       "allowedVersions": "<4"
     },
     {
+      "matchManagers": ["npm"],
       "matchPackageNames": ["read-pkg"],
       "allowedVersions": "<6"
     },
     {
+      "matchManagers": ["npm"],
       "matchPackageNames": ["read-pkg-up"],
       "allowedVersions": "<8"
     },
     {
+      "matchManagers": ["npm"],
       "matchPackageNames": ["sort-on"],
       "allowedVersions": "<5"
     },
     {
+      "matchManagers": ["npm"],
       "matchPackageNames": ["string-width"],
       "allowedVersions": "<5"
     },
     {
+      "matchManagers": ["npm"],
       "matchPackageNames": ["strip-ansi"],
       "allowedVersions": "<7"
     },
     {
+      "matchManagers": ["npm"],
       "matchPackageNames": ["supports-color"],
       "allowedVersions": "<9"
     },
     {
+      "matchManagers": ["npm"],
       "matchPackageNames": ["tempy"],
       "allowedVersions": "<2"
     },
     {
+      "matchManagers": ["npm"],
       "matchPackageNames": ["test-each"],
       "allowedVersions": "<3"
     }
