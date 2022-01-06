@@ -6,7 +6,7 @@
     "automerge": false
   },
   "lockFileMaintenance": {
-    "enabled": true
+    "enabled": false
   },
   "rebaseWhen": "conflicted",
   "packageRules": [
