@@ -234,6 +234,11 @@
     },
     {
       "matchManagers": ["npm"],
+      "matchPackageNames": ["p-timeout"],
+      "allowedVersions": "<5"
+    },
+    {
+      "matchManagers": ["npm"],
       "matchPackageNames": ["p-wait-for"],
       "allowedVersions": "<4"
     },
