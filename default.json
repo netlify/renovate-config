@@ -291,6 +291,11 @@
       "matchManagers": ["npm"],
       "matchPackageNames": ["test-each"],
       "allowedVersions": "<3"
+    },
+    {
+      "matchManagers": ["npm"],
+      "matchPackageNames": ["to-readable-stream"],
+      "allowedVersions": "<3"
     }
   ]
 }
