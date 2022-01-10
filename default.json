@@ -34,6 +34,11 @@
     },
     {
       "matchManagers": ["npm"],
+      "matchPackageNames": ["ansi-styles"],
+      "allowedVersions": "<6"
+    },
+    {
+      "matchManagers": ["npm"],
       "matchPackageNames": ["boxen"],
       "allowedVersions": "<6"
     },
