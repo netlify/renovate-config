@@ -149,6 +149,11 @@
     },
     {
       "matchManagers": ["npm"],
+      "matchPackageNames": ["log-symbols"],
+      "allowedVersions": "<5"
+    },
+    {
+      "matchManagers": ["npm"],
       "matchPackageNames": ["map-obj"],
       "allowedVersions": "<5"
     },
