@@ -54,6 +54,11 @@
     },
     {
       "matchManagers": ["npm"],
+      "matchPackageNames": ["configstore"],
+      "allowedVersions": "<6"
+    },
+    {
+      "matchManagers": ["npm"],
       "matchPackageNames": ["env-paths"],
       "allowedVersions": "<3"
     },
