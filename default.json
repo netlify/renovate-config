@@ -34,6 +34,11 @@
     },
     {
       "matchManagers": ["npm"],
+      "matchPackageNames": ["ansi-styles"],
+      "allowedVersions": "<6"
+    },
+    {
+      "matchManagers": ["npm"],
       "matchPackageNames": ["boxen"],
       "allowedVersions": "<6"
     },
@@ -46,6 +51,11 @@
       "matchManagers": ["npm"],
       "matchPackageNames": ["clean-stack"],
       "allowedVersions": "<4"
+    },
+    {
+      "matchManagers": ["npm"],
+      "matchPackageNames": ["configstore"],
+      "allowedVersions": "<6"
     },
     {
       "matchManagers": ["npm"],
@@ -149,6 +159,11 @@
     },
     {
       "matchManagers": ["npm"],
+      "matchPackageNames": ["log-symbols"],
+      "allowedVersions": "<5"
+    },
+    {
+      "matchManagers": ["npm"],
       "matchPackageNames": ["map-obj"],
       "allowedVersions": "<5"
     },
@@ -161,6 +176,11 @@
       "matchManagers": ["npm"],
       "matchPackageNames": ["node-fetch"],
       "allowedVersions": "<3"
+    },
+    {
+      "matchManagers": ["npm"],
+      "matchPackageNames": ["node-version-alias"],
+      "allowedVersions": "<2"
     },
     {
       "matchManagers": ["npm"],
@@ -229,6 +249,11 @@
     },
     {
       "matchManagers": ["npm"],
+      "matchPackageNames": ["p-timeout"],
+      "allowedVersions": "<5"
+    },
+    {
+      "matchManagers": ["npm"],
       "matchPackageNames": ["p-wait-for"],
       "allowedVersions": "<4"
     },
@@ -270,6 +295,11 @@
     {
       "matchManagers": ["npm"],
       "matchPackageNames": ["test-each"],
+      "allowedVersions": "<3"
+    },
+    {
+      "matchManagers": ["npm"],
+      "matchPackageNames": ["to-readable-stream"],
       "allowedVersions": "<3"
     }
   ]
