@@ -59,6 +59,11 @@
     },
     {
       "matchManagers": ["npm"],
+      "matchPackageNames": ["dot-prop"],
+      "allowedVersions": "<7"
+    },
+    {
+      "matchManagers": ["npm"],
       "matchPackageNames": ["env-paths"],
       "allowedVersions": "<3"
     },
