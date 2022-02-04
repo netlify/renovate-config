@@ -5,6 +5,11 @@
       "matchManagers": ["npm"],
       "matchPackageNames": ["ansi-escapes"],
       "allowedVersions": "<5"
+    },
+    {
+      "matchManagers": ["npm"],
+      "matchPackageNames": ["is-plain-obj"],
+      "allowedVersions": "<4"
     }
   ]
 }
