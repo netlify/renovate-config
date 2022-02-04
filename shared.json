@@ -134,11 +134,6 @@
     },
     {
       "matchManagers": ["npm"],
-      "matchPackageNames": ["is-plain-obj"],
-      "allowedVersions": "<4"
-    },
-    {
-      "matchManagers": ["npm"],
       "matchPackageNames": ["junk"],
       "allowedVersions": "<4"
     },
