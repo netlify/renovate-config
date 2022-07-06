@@ -1,0 +1,26 @@
+{
+	"description": "Let Renovate upgrade the terraform versions used by Spacelift",
+	"packageRules": [
+		{
+			"matchPackageNames": ["terraform"],
+			"versioning": "hashicorp",
+			"extractVersion": "^v(?<version>.*)$",
+			"commitMessageTopic": "Spacelift Terraform version",
+			"stabilityDays": 2 // There's usually a delay between a terraform version getting published and it becoming available on Spacelift
+		}
+	],
+	"regexManagers": [
+		{
+			"fileMatch": [
+				"^.spacelift/config.yml"
+			],
+			"matchStrings": [
+				// I'm so sorry about this. But the re2 engine doesn't allow look-around. Instead, we have to explicitly allow comments of size 0-4, 7+, or 6 so long as they aren't literally ` rskip`
+				"\\n\\s+terraform_version: \"?(?<currentValue>\\d+\\.\\d+\\.\\d+)\"?\\s*((\\n)|(#((.{0,4}|.{7,}|[^ ].{5}| [^r].{4}| r[^s].{3}| rs[^k].{2}| rsk[^i].| rski[^p])(\\n|$))))"
+			],
+			"depNameTemplate": "terraform",
+			"packageNameTemplate": "hashicorp/terraform",
+			"datasourceTemplate": "github-releases"
+		}
+	]
+}
