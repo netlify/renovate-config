@@ -14,7 +14,9 @@
   "regexManagers": [
     {
       "fileMatch": ["^KSGFile(\\.ya?ml)?$"],
-      "matchStrings": ["ksg_version: (?<currentValue>v\\d+\\.\\d+\\.\\d+)"],
+      "matchStrings": [
+        "ksg_version: (?<currentValue>v\\d+(\\.\\d+(\\.\\d+)?)?)"
+      ],
       "depNameTemplate": "KSG",
       "lookupNameTemplate": "netlify/ksg-cli",
       "datasourceTemplate": "github-releases"
