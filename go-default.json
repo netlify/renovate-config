@@ -15,7 +15,7 @@
     {
       "fileMatch": ["^KSGFile(\\.ya?ml)?$"],
       "matchStrings": [
-        "ksg_version: (?<currentValue>v\\d+(\\.\\d+(\\.\\d+)?)?)"
+        "ksg_version: \"?(?<currentValue>v\\d+(\\.\\d+(\\.\\d+([-\\.][\\w\\.-]+)?)?)?)\"?"
       ],
       "depNameTemplate": "KSG",
       "lookupNameTemplate": "netlify/ksg-cli",
