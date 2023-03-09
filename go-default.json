@@ -11,6 +11,12 @@
   "prBodyNotes": [
     "{{#if isMajor}}:warning: MAJOR MAJOR MAJOR :warning:{{/if}}"
   ],
+  "packageRules": [
+    {
+      "matchManagers": ["gomod"],
+      "digest": { "masterIssueApproval": true }
+    }
+  ],
   "regexManagers": [
     {
       "fileMatch": ["^KSGFile(\\.ya?ml)?$"],
