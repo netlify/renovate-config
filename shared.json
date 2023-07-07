@@ -30,16 +30,6 @@
       "matchManagers": ["npm"],
       "matchPackagePatterns": ["inquirer"],
       "groupName": "Inquirer packages"
-    },
-    {
-      "matchManagers": ["npm"],
-      "matchPackageNames": ["got"],
-      "allowedVersions": "<11"
-    },
-    {
-      "matchManagers": ["npm"],
-      "matchPackageNames": ["pretty-bytes"],
-      "allowedVersions": "<6"
     }
   ]
 }
