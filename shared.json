@@ -8,8 +8,13 @@
   "lockFileMaintenance": {
     "enabled": false
   },
+  "labels": ["dependencies"],
   "rebaseWhen": "conflicted",
   "packageRules": [
+    {
+      "matchManagers": ["npm"],
+      "addLabels": ["javascript"]
+    },
     {
       "matchManagers": ["npm"],
       "matchPackagePatterns": ["^@netlify", "^netlify", "^github.com/netlify"],

@@ -5,8 +5,13 @@
   "timezone": "Europe/Paris",
   "schedule": "after 4am and before 9am every weekday",
   "lockfileMaintenance": true,
+  "labels": ["dependencies"],
   "semanticCommitType": "fix",
   "packageRules": [
+    {
+      "matchManagers": ["cargo"],
+      "addLabels": ["rust"]
+    },
     {
       "packageNames": ["capnp", "capnpc"],
       "groupName": "capnp packages"
@@ -41,7 +46,14 @@
       "groupName": "tracing packages"
     },
     {
-      "matchPackageNames": ["hyper-rustls", "rustls", "rustls-native-certs", "tokio-rustls", "webpki", "webpki-roots"],
+      "matchPackageNames": [
+        "hyper-rustls",
+        "rustls",
+        "rustls-native-certs",
+        "tokio-rustls",
+        "webpki",
+        "webpki-roots"
+      ],
       "groupName": "rustls packages"
     }
   ],
