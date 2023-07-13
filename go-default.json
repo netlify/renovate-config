@@ -7,14 +7,15 @@
   "docker-compose": {
     "enabled": false
   },
-  "labels": ["type: chore"],
+  "labels": ["dependencies"],
   "prBodyNotes": [
     "{{#if isMajor}}:warning: MAJOR MAJOR MAJOR :warning:{{/if}}"
   ],
   "packageRules": [
     {
       "matchManagers": ["gomod"],
-      "digest": { "masterIssueApproval": true }
+      "digest": { "masterIssueApproval": true },
+      "addLabels": ["golang"]
     }
   ],
   "regexManagers": [
