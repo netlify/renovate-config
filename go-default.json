@@ -1,26 +1,60 @@
 {
-  "extends": ["config:base"],
-  "postUpdateOptions": ["gomodTidy"],
+  "extends": [
+    "config:base"
+  ],
+  "postUpdateOptions": [
+    "gomodTidy"
+  ],
   "docker": {
     "enabled": false
   },
   "docker-compose": {
     "enabled": false
   },
-  "labels": ["dependencies"],
+  "labels": [
+    "dependencies"
+  ],
   "prBodyNotes": [
     "{{#if isMajor}}:warning: MAJOR MAJOR MAJOR :warning:{{/if}}"
   ],
   "packageRules": [
     {
-      "matchManagers": ["gomod"],
-      "digest": { "masterIssueApproval": true },
-      "addLabels": ["golang"]
+      "matchManagers": [
+        "gomod"
+      ],
+      "digest": {
+        "masterIssueApproval": true
+      },
+      "addLabels": [
+        "golang"
+      ]
+    },
+    {
+      "packagePatterns": [
+        "^github\\.com/aws/aws-sdk-go-v2(/|$)"
+      ],
+      "groupName": "aws-sdk"
+    },
+    {
+      "packageNames": [
+        "github.com/DataDog/datadog-go/v5",
+        "gopkg.in/DataDog/dd-trace-go.v1"
+      ],
+      "groupName": "datadog"
+    },
+    {
+      "packageNames": [
+        "google.golang.org/api",
+        "cloud.google.com/go/storage"
+      ],
+      "groupName": "google-sdk"
     }
   ],
   "regexManagers": [
     {
-      "fileMatch": ["^KSGFile(\\.ya?ml)?$"],
+      "fileMatch": [
+        "^KSGFile(\\.ya?ml)?$"
+      ],
       "matchStrings": [
         "ksg_version: \"?(?<currentValue>v\\d+(\\.\\d+(\\.\\d+([-\\.][\\w\\.-]+)?)?)?)\"?"
       ],
