@@ -1,26 +1,40 @@
 {
-  "extends": ["config:base"],
-  "postUpdateOptions": ["gomodTidy"],
+  "extends": [
+    "config:base"
+  ],
+  "postUpdateOptions": [
+    "gomodTidy"
+  ],
   "docker": {
     "enabled": false
   },
   "docker-compose": {
     "enabled": false
   },
-  "labels": ["dependencies"],
+  "labels": [
+    "dependencies"
+  ],
   "prBodyNotes": [
     "{{#if isMajor}}:warning: MAJOR MAJOR MAJOR :warning:{{/if}}"
   ],
   "packageRules": [
     {
-      "matchManagers": ["gomod"],
-      "digest": { "masterIssueApproval": true },
-      "addLabels": ["golang"]
+      "matchManagers": [
+        "gomod"
+      ],
+      "digest": {
+        "masterIssueApproval": true
+      },
+      "addLabels": [
+        "golang"
+      ]
     }
   ],
   "regexManagers": [
     {
-      "fileMatch": ["^KSGFile(\\.ya?ml)?$"],
+      "fileMatch": [
+        "^KSGFile(\\.ya?ml)?$"
+      ],
       "matchStrings": [
         "ksg_version: \"?(?<currentValue>v\\d+(\\.\\d+(\\.\\d+([-\\.][\\w\\.-]+)?)?)?)\"?"
       ],
