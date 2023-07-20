@@ -28,6 +28,26 @@
       "addLabels": [
         "golang"
       ]
+    },
+    {
+      "packagePatterns": [
+        "^github\\.com/aws/aws-sdk-go-v2(/|$)"
+      ],
+      "groupName": "aws-sdk"
+    },
+    {
+      "packageNames": [
+        "github.com/DataDog/datadog-go/v5",
+        "gopkg.in/DataDog/dd-trace-go.v1"
+      ],
+      "groupName": "datadog"
+    },
+    {
+      "packageNames": [
+        "google.golang.org/api",
+        "cloud.google.com/go/storage"
+      ],
+      "groupName": "google-sdk"
     }
   ],
   "regexManagers": [
