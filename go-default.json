@@ -1,6 +1,8 @@
 {
   "extends": [
-    "config:base"
+    "config:base",
+    "regexManagers:dockerfileVersions",
+    "regexManagers:githubActionsVersions"
   ],
   "postUpdateOptions": [
     "gomodTidy"
