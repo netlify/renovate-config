@@ -47,6 +47,27 @@
         "cloud.google.com/go/storage"
       ],
       "groupName": "google-sdk"
+    },
+    {
+      "matchManagers": [
+        "gomod",
+        "regex",
+        "docker"
+      ],
+      "packageNames": [
+        "go",
+        "golang"
+      ],
+      "groupName": "Go version"
+    },
+    {
+      "matchManagers": [
+        "circleci"
+      ],
+      "packageNames": [
+        "cimg/go"
+      ],
+      "groupName": "Go version"
     }
   ],
   "regexManagers": [
