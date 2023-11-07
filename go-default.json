@@ -4,6 +4,7 @@
     "regexManagers:dockerfileVersions",
     "regexManagers:githubActionsVersions"
   ],
+  "rebaseWhen": "conflicted",
   "postUpdateOptions": [
     "gomodTidy"
   ],
