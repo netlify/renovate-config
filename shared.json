@@ -10,6 +10,7 @@
   },
   "labels": ["dependencies"],
   "rebaseWhen": "conflicted",
+  "prConcurrentLimit": 0,
   "packageRules": [
     {
       "matchManagers": ["npm"],
