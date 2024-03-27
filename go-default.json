@@ -6,7 +6,8 @@
   ],
   "rebaseWhen": "conflicted",
   "postUpdateOptions": [
-    "gomodTidy"
+    "gomodTidy",
+    "gomodUpdateImportPaths"
   ],
   "docker-compose": {
     "enabled": false
