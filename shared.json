@@ -1,7 +1,6 @@
 {
   "extends": ["config:base", "schedule:weekly"],
   "rangeStrategy": "update-lockfile",
-  "automerge": true,
   "major": {
     "automerge": false
   },
@@ -11,6 +10,11 @@
   "labels": ["dependencies"],
   "rebaseWhen": "conflicted",
   "packageRules": [
+    {
+      "matchUpdateTypes": ["minor", "patch"],
+      "matchCurrentVersion": "!/^0/",
+      "automerge": true
+    },
     {
       "matchManagers": ["npm"],
       "addLabels": ["javascript"]
