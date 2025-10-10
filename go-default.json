@@ -39,6 +39,12 @@
       "groupName": "aws-sdk"
     },
     {
+      "packagePatterns": [
+        "^golang\\.org/x/"
+      ],
+      "groupName": "golang-x"
+    },
+    {
       "packageNames": [
         "github.com/DataDog/datadog-go/v5",
         "gopkg.in/DataDog/dd-trace-go.v1"
