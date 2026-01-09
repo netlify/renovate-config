@@ -13,8 +13,8 @@
     "enabled": false
   },
   "env": {
-		"GOPRIVATE": "github.com/netlify/*"
-	},
+    "GOPRIVATE": "github.com/netlify/*"
+  },
   "labels": [
     "dependencies"
   ],
