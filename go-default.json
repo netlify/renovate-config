@@ -12,6 +12,9 @@
   "docker-compose": {
     "enabled": false
   },
+  "env": {
+    "GOPRIVATE": "github.com/netlify/*"
+  },
   "labels": [
     "dependencies"
   ],
