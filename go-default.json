@@ -21,6 +21,7 @@
   "prBodyNotes": [
     "{{#if isMajor}}:warning: MAJOR MAJOR MAJOR :warning:{{/if}}"
   ],
+  "minimumReleaseAge": "3 days",
   "packageRules": [
     {
       "matchManagers": [
@@ -32,6 +33,12 @@
       "addLabels": [
         "golang"
       ]
+    },
+    {
+      "matchPackagePatterns": [
+        "^github\\.com/netlify/"
+      ],
+      "minimumReleaseAge": null
     },
     {
       "packagePatterns": [

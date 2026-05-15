@@ -9,6 +9,7 @@
   },
   "labels": ["dependencies"],
   "rebaseWhen": "conflicted",
+  "minimumReleaseAge": "3 days",
   "packageRules": [
     {
       "matchUpdateTypes": ["minor", "patch"],
@@ -23,7 +24,8 @@
       "matchManagers": ["npm"],
       "matchPackagePatterns": ["^@netlify", "^netlify", "^github.com/netlify"],
       "rangeStrategy": "bump",
-      "schedule": null
+      "schedule": null,
+      "minimumReleaseAge": null
     },
     {
       "matchManagers": ["npm"],
