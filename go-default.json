@@ -41,6 +41,13 @@
       "minimumReleaseAge": null
     },
     {
+      "matchDatasources": [
+        "git-tags",
+        "git-refs"
+      ],
+      "minimumReleaseAge": null
+    },
+    {
       "packagePatterns": [
         "^github\\.com/aws/aws-sdk-go-v2(/|$)",
         "^github\\.com/aws/aws-lambda-go$",
