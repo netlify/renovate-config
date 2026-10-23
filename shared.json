@@ -41,6 +41,10 @@
       "matchManagers": ["npm"],
       "matchPackagePatterns": ["inquirer"],
       "groupName": "Inquirer packages"
+    },
+    {
+      "matchDatasources": ["git-tags", "git-refs"],
+      "minimumReleaseAge": null
     }
   ]
 }
