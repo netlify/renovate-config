@@ -6,18 +6,19 @@
       "groupName": "kiln packages"
     }
   ],
-  "regexManagers": [
+  "customManagers": [
     {
-      "fileMatch": [
-        "^\\.devcontainer/Dockerfile$",
-        "^\\.circleci/config\\.yml$"
+      "customType": "regex",
+      "managerFilePatterns": [
+        "/^\\.devcontainer/Dockerfile$/",
+        "/^\\.circleci/config\\.yml$/"
       ],
       "matchStrings": [
         "(export|ENV) KILN_RUNNER_VERSION=\"(?<currentValue>\\d+\\.\\d+\\.\\d+)\""
       ],
       "extractVersionTemplate": "^kiln-runner-v(?<version>[\\d\\.]+)$",
       "depNameTemplate": "kiln-runner",
-      "lookupNameTemplate": "netlify/kiln",
+      "packageNameTemplate": "netlify/kiln",
       "datasourceTemplate": "github-releases"
     }
   ]

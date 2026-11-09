@@ -4,7 +4,7 @@
   "prCreation": "not-pending",
   "timezone": "Europe/Paris",
   "schedule": "after 4am and before 9am every weekday",
-  "lockfileMaintenance": true,
+  "lockFileMaintenance": { "enabled": true },
   "labels": ["dependencies"],
   "semanticCommitType": "fix",
   "packageRules": [
@@ -13,36 +13,35 @@
       "addLabels": ["rust"]
     },
     {
-      "packageNames": ["capnp", "capnpc"],
+      "matchPackageNames": ["capnp", "capnpc"],
       "groupName": "capnp packages"
     },
     {
-      "packagePatterns": ["^futures[-_]?"],
+      "matchPackageNames": ["/^futures[-_]?/"],
       "groupName": "futures packages"
     },
     {
-      "packagePatterns": ["^opentelemetry[-_]?", "^tracing-opentelemetry$"],
+      "matchPackageNames": ["/^opentelemetry[-_]?/", "/^tracing-opentelemetry$/"],
       "groupName": "opentelemetry packages"
     },
     {
-      "packagePatterns": ["^prost[-_]?", "^tonic[-_]?"],
+      "matchPackageNames": ["/^prost[-_]?/", "/^tonic[-_]?/"],
       "groupName": "gRPC-related packages"
     },
     {
-      "packagePatterns": ["^rusoto[-_]?"],
+      "matchPackageNames": ["/^rusoto[-_]?/"],
       "groupName": "rusoto packages"
     },
     {
-      "packagePatterns": ["^serde[-_]?"],
+      "matchPackageNames": ["/^serde[-_]?/"],
       "groupName": "serde packages"
     },
     {
-      "packagePatterns": ["^tokio[-_]?"],
+      "matchPackageNames": ["/^tokio[-_]?/"],
       "groupName": "tokio packages"
     },
     {
-      "packagePatterns": ["^tracing[-_]?"],
-      "excludePackageNames": ["tracing-opentelemetry"],
+      "matchPackageNames": ["/^tracing[-_]?/", "!tracing-opentelemetry"],
       "groupName": "tracing packages"
     },
     {
@@ -57,14 +56,15 @@
       "groupName": "rustls packages"
     }
   ],
-  "regexManagers": [
+  "customManagers": [
     {
-      "fileMatch": ["^rust-toolchain(\\.ya?ml)?$"],
+      "customType": "regex",
+      "managerFilePatterns": ["/^rust-toolchain(\\.ya?ml)?$/"],
       "matchStrings": [
         "channel\\s*=\\s*\"(?<currentValue>\\d+\\.\\d+\\.\\d+)\""
       ],
       "depNameTemplate": "rust",
-      "lookupNameTemplate": "rust-lang/rust",
+      "packageNameTemplate": "rust-lang/rust",
       "datasourceTemplate": "github-releases"
     }
   ]

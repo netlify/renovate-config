@@ -1,5 +1,9 @@
 {
-  "extends": ["config:base", "schedule:weekly"],
+  "extends": [
+    "config:recommended",
+    "schedule:weekly",
+    "helpers:pinGitHubActionDigests"
+  ],
   "rangeStrategy": "update-lockfile",
   "major": {
     "automerge": false
@@ -17,19 +21,30 @@
       "automerge": true
     },
     {
+      "description": "Pinning an action to the SHA its tag already resolves to changes nothing that runs.",
+      "matchDepTypes": ["action"],
+      "matchUpdateTypes": ["pinDigest"],
+      "automerge": true
+    },
+    {
+      "description": "Renovate has no release timestamps for a regenerated lockfile, so the stability-days check never passes. pnpm and npm enforce the release age themselves during regeneration.",
+      "matchUpdateTypes": ["lockFileMaintenance"],
+      "minimumReleaseAge": null
+    },
+    {
       "matchManagers": ["npm"],
       "addLabels": ["javascript"]
     },
     {
       "matchManagers": ["npm"],
-      "matchPackagePatterns": ["^@netlify", "^netlify", "^github.com/netlify"],
+      "matchPackageNames": ["/^@netlify/", "/^netlify/", "/^github.com/netlify/"],
       "rangeStrategy": "bump",
       "schedule": null,
       "minimumReleaseAge": null
     },
     {
       "matchManagers": ["npm"],
-      "matchSourceUrlPrefixes": ["https://github.com/netlify/build"],
+      "matchSourceUrls": ["https://github.com/netlify/build{/,}**"],
       "groupName": "Netlify packages"
     },
     {
@@ -39,7 +54,7 @@
     },
     {
       "matchManagers": ["npm"],
-      "matchPackagePatterns": ["inquirer"],
+      "matchPackageNames": ["/inquirer/"],
       "groupName": "Inquirer packages"
     }
   ]
