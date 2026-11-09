@@ -4,11 +4,11 @@
   ],
   "packageRules": [
     {
-      "packagePatterns": ["*"],
+      "matchPackageNames": ["*"],
       "enabled": false
     },
     {
-      "packagePatterns": ["^netlify-cms"],
+      "matchPackageNames": ["/^netlify-cms/"],
       "schedule": null,
       "enabled": true
     }

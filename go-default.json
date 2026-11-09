@@ -1,8 +1,8 @@
 {
   "extends": [
-    "config:base",
-    "regexManagers:dockerfileVersions",
-    "regexManagers:githubActionsVersions"
+    "config:recommended",
+    "customManagers:dockerfileVersions",
+    "customManagers:githubActionsVersions"
   ],
   "rebaseWhen": "conflicted",
   "postUpdateOptions": [
@@ -28,41 +28,41 @@
         "gomod"
       ],
       "digest": {
-        "masterIssueApproval": true
+        "dependencyDashboardApproval": true
       },
       "addLabels": [
         "golang"
       ]
     },
     {
-      "matchPackagePatterns": [
-        "^github\\.com/netlify/"
+      "matchPackageNames": [
+        "/^github\\.com/netlify//"
       ],
       "minimumReleaseAge": null
     },
     {
-      "packagePatterns": [
-        "^github\\.com/aws/aws-sdk-go-v2(/|$)",
-        "^github\\.com/aws/aws-lambda-go$",
-        "^github\\.com/aws/aws-sdk-go$"
+      "matchPackageNames": [
+        "/^github\\.com/aws/aws-sdk-go-v2(/|$)/",
+        "/^github\\.com/aws/aws-lambda-go$/",
+        "/^github\\.com/aws/aws-sdk-go$/"
       ],
       "groupName": "aws-sdk"
     },
     {
-      "packagePatterns": [
-        "^golang\\.org/x/"
+      "matchPackageNames": [
+        "/^golang\\.org/x//"
       ],
       "groupName": "golang-x"
     },
     {
-      "packageNames": [
+      "matchPackageNames": [
         "github.com/DataDog/datadog-go/v5",
         "gopkg.in/DataDog/dd-trace-go.v1"
       ],
       "groupName": "datadog"
     },
     {
-      "packageNames": [
+      "matchPackageNames": [
         "google.golang.org/api",
         "cloud.google.com/go/storage"
       ],
@@ -71,10 +71,10 @@
     {
       "matchManagers": [
         "gomod",
-        "regex",
+        "custom.regex",
         "docker"
       ],
-      "packageNames": [
+      "matchPackageNames": [
         "go",
         "golang"
       ],
@@ -84,22 +84,23 @@
       "matchManagers": [
         "circleci"
       ],
-      "packageNames": [
+      "matchPackageNames": [
         "cimg/go"
       ],
       "groupName": "Go version"
     }
   ],
-  "regexManagers": [
+  "customManagers": [
     {
-      "fileMatch": [
-        "^KSGFile(\\.ya?ml)?$"
+      "customType": "regex",
+      "managerFilePatterns": [
+        "/^KSGFile(\\.ya?ml)?$/"
       ],
       "matchStrings": [
         "ksg_version: \"?(?<currentValue>v\\d+(\\.\\d+(\\.\\d+([-\\.][\\w\\.-]+)?)?)?)\"?"
       ],
       "depNameTemplate": "KSG",
-      "lookupNameTemplate": "netlify/ksg-cli",
+      "packageNameTemplate": "netlify/ksg-cli",
       "datasourceTemplate": "github-releases"
     }
   ]

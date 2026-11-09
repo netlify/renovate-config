@@ -3,7 +3,7 @@
     "github>netlify/renovate-config"
   ],
   "packageRules": [{
-    "packagePatterns": ["^netlify-cms"],
+    "matchPackageNames": ["/^netlify-cms/"],
     "schedule": null
   }]
 }
